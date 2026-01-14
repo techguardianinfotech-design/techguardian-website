@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Custom Software Development | TechGuardian Infotech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SEO -->
+  <meta name="description"
+        content="Custom software development services by TechGuardian Infotech. Secure, scalable, and tailor-made software solutions for businesses, schools, and startups." />
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease;
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .tech-chip {
+      padding: 0.7rem 1.1rem;
+      border-radius: 9999px;
+      background: rgba(255,255,255,0.08);
+      color: #e5e7eb;
+      font-weight: 500;
+      transition: all .3s ease;
+    }
+    .tech-chip:hover {
+      background: linear-gradient(to right,#6366f1,#3b82f6);
+      transform: translateY(-4px);
+      color: white;
+    }
+
+   
+  /* Tech logo jump animation */
+  @keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  .tech-logo {
+    animation: jump 2.2s ease-in-out infinite;
+  }
+
+  /* Delay for staggered effect */
+  .delay-1 { animation-delay: 0.2s; }
+  .delay-2 { animation-delay: 0.4s; }
+  .delay-3 { animation-delay: 0.6s; }
+  .delay-4 { animation-delay: 0.8s; }
+  .delay-5 { animation-delay: 1s; }
+  .delay-6 { animation-delay: 1.2s; }
+
+  .tech-card:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 0 40px rgba(99,102,241,0.35);
+  }
+
+
+@keyframes borderGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===== Floating Icon Animation ===== */
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* ===== Pulse Glow ===== */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 20px rgba(255,255,255,0.15); }
+  50% { box-shadow: 0 0 40px rgba(255,255,255,0.35); }
+  100% { box-shadow: 0 0 20px rgba(255,255,255,0.15); }
+}
+
+.feature-card {
+  position: relative;
+  border-radius: 1.5rem;
+  padding: 2px;
+  background-size: 300% 300%;
+  animation: borderGlow 6s ease infinite;
+}
+
+.feature-inner {
+  border-radius: 1.4rem;
+  background: rgba(15,23,42,0.85);
+  padding: 2rem;
+  height: 100%;
+  transition: transform .4s ease;
+}
+
+.feature-card:hover .feature-inner {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.feature-icon {
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-indigo-950 to-black text-gray-200">
+
+<!-- FLOATING HOME -->
+<a href="/"
+   class="fixed bottom-6 right-6 z-50
+          bg-gradient-to-r from-indigo-500 to-blue-600
+          text-white px-5 py-3 rounded-full shadow-xl
+          hover:scale-110 transition font-semibold">
+  ← Home
+</a>
+
+<!-- HERO -->
+<!-- HERO SECTION -->
+<section class="relative overflow-hidden">
+
+  <!-- Animated Background Glows -->
+  <div class="absolute -top-40 -left-40 w-[500px] h-[500px]
+              bg-indigo-600/30 rounded-full blur-3xl animate-pulse"></div>
+  <div class="absolute -bottom-40 -right-40 w-[500px] h-[500px]
+              bg-pink-600/30 rounded-full blur-3xl animate-pulse"></div>
+
+  <!-- Content -->
+  <div class="relative max-w-6xl mx-auto px-6 py-28 text-center">
+
+    <!-- Badge -->
+    <span class="inline-flex items-center gap-2 px-5 py-2 mb-6
+                 text-sm font-semibold
+                 bg-white/10 backdrop-blur-md
+                 border border-white/10
+                 text-indigo-300 rounded-full shadow-lg">
+      🚀 Custom Software Development
+    </span>
+
+    <!-- Heading -->
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-8 leading-tight">
+      Software Built <br class="hidden md:block">
+      <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400
+                   bg-clip-text text-transparent">
+        Around Your Business
+      </span>
+    </h1>
+
+    <!-- Description -->
+    <p class="text-gray-300 max-w-3xl mx-auto text-lg mb-12 leading-relaxed">
+      We design and develop
+      <span class="text-indigo-300 font-semibold">custom software solutions</span>
+      that automate processes, boost efficiency, and
+      <span class="text-pink-300 font-semibold">scale seamlessly</span>
+      with your organization.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center gap-5">
+
+      <a href="/#contact"
+         class="inline-flex items-center justify-center px-10 py-4 rounded-full
+                bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+                text-white font-semibold text-lg
+                hover:scale-110 transition
+                shadow-[0_0_40px_rgba(99,102,241,0.6)]">
+        ⚡ Get Free Consultation
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- BREADCRUMB -->
+<nav class="max-w-6xl mx-auto px-6 mb-12 text-sm text-gray-400">
+  <a href="/" class="hover:text-white">Home</a> /
+  <a href="/services" class="hover:text-white">Services</a> /
+  <span class="text-gray-300">Custom Software</span>
+</nav>
+
+<!-- OVERVIEW -->
+<!-- WHY CUSTOM SOFTWARE -->
+<section class="max-w-6xl mx-auto px-6 pb-28">
+  <div class="fade-up relative rounded-3xl p-[2px]
+              bg-gradient-to-br from-indigo-500/60 via-purple-500/40 to-pink-500/60
+              hover:shadow-[0_0_45px_rgba(99,102,241,0.35)] transition">
+
+    <div class="bg-slate-900/90 backdrop-blur-xl rounded-3xl p-10 sm:p-12
+                transform transition hover:-translate-y-2">
+
+      <!-- Heading -->
+      <h2 class="text-3xl font-extrabold text-white mb-6 flex items-center gap-2">
+        🧩 Why <span class="text-indigo-400">Custom Software?</span>
+      </h2>
+
+      <!-- Text -->
+      <p class="text-gray-300 mb-4 leading-relaxed">
+        Off-the-shelf software often <span class="text-pink-300 font-semibold">limits growth</span>.
+        At <strong class="text-white">TechGuardian Infotech</strong>, we design and build
+        <span class="text-indigo-300 font-semibold">tailor-made solutions</span>
+        that perfectly align with your workflow, users, and long-term goals.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed">
+        From <span class="text-emerald-300 font-semibold">school ERP systems</span> and
+        <span class="text-orange-300 font-semibold">automation tools</span> to
+        <span class="text-indigo-300 font-semibold">business dashboards</span> and
+        internal management software —
+        we create solutions that are <span class="text-white font-semibold">built to scale and perform</span>.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- USE CASES -->
+<!-- WHERE OUR SOFTWARE HELPS -->
+<section class="max-w-7xl mx-auto px-6 pb-28">
+  <h2 class="text-3xl font-extrabold text-white text-center mb-14">
+    Where Our Software Helps
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <!-- Schools -->
+    <div class="fade-up group relative rounded-3xl p-[2px]
+                bg-gradient-to-br from-indigo-500 via-blue-500 to-cyan-400
+                hover:shadow-[0_0_50px_rgba(99,102,241,0.6)] transition">
+      <div class="h-full bg-slate-900/90 backdrop-blur-xl rounded-3xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">🏫</div>
+        <h3 class="text-xl font-bold text-white mb-3">
+          Schools & Institutes
+        </h3>
+        <p class="text-gray-300 text-sm">
+          ERP systems, admissions, attendance, exams, and parent communication tools.
+        </p>
+      </div>
+    </div>
+
+    <!-- Businesses -->
+    <div class="fade-up group relative rounded-3xl p-[2px]
+                bg-gradient-to-br from-purple-500 via-fuchsia-500 to-pink-500
+                hover:shadow-[0_0_50px_rgba(168,85,247,0.6)] transition">
+      <div class="h-full bg-slate-900/90 backdrop-blur-xl rounded-3xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">🏢</div>
+        <h3 class="text-xl font-bold text-white mb-3">
+          Businesses
+        </h3>
+        <p class="text-gray-300 text-sm">
+          CRM platforms, billing systems, dashboards, and internal business tools.
+        </p>
+      </div>
+    </div>
+
+    <!-- Startups -->
+    <div class="fade-up group relative rounded-3xl p-[2px]
+                bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500
+                hover:shadow-[0_0_50px_rgba(16,185,129,0.6)] transition">
+      <div class="h-full bg-slate-900/90 backdrop-blur-xl rounded-3xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">🚀</div>
+        <h3 class="text-xl font-bold text-white mb-3">
+          Startups
+        </h3>
+        <p class="text-gray-300 text-sm">
+          MVP development, SaaS platforms, scalable APIs, and admin panels.
+        </p>
+      </div>
+    </div>
+
+    <!-- Secure Systems -->
+    <div class="fade-up group relative rounded-3xl p-[2px]
+                bg-gradient-to-br from-orange-500 via-red-500 to-rose-500
+                hover:shadow-[0_0_50px_rgba(249,115,22,0.6)] transition">
+      <div class="h-full bg-slate-900/90 backdrop-blur-xl rounded-3xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">🔐</div>
+        <h3 class="text-xl font-bold text-white mb-3">
+          Secure Systems
+        </h3>
+        <p class="text-gray-300 text-sm">
+          Role-based access control, data protection, logs, and compliance-ready systems.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- KEY FEATURES -->
+<section class="max-w-6xl mx-auto px-6 pb-28">
+  <h2 class="text-3xl font-extrabold text-white text-center mb-14">
+    Key Features
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
+
+    <!-- Feature 1 -->
+    <div class="fade-up feature-card"
+         style="background-image: linear-gradient(135deg,#22d3ee,#3b82f6,#6366f1);">
+      <div class="feature-inner animate-[pulseGlow_4s_ease-in-out_infinite]">
+        <div class="text-5xl mb-4 feature-icon">⚙️</div>
+        <h3 class="text-lg font-bold text-white mb-2">Workflow Automation</h3>
+        <p class="text-sm text-gray-300">
+          Smart automation to save time, reduce errors, and boost productivity.
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="fade-up feature-card"
+         style="background-image: linear-gradient(135deg,#a855f7,#6366f1,#4f46e5);">
+      <div class="feature-inner animate-[pulseGlow_4s_ease-in-out_infinite]">
+        <div class="text-5xl mb-4 feature-icon">🔒</div>
+        <h3 class="text-lg font-bold text-white mb-2">Secure Architecture</h3>
+        <p class="text-sm text-gray-300">
+          Built with modern security, encryption, and role-based access.
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="fade-up feature-card"
+         style="background-image: linear-gradient(135deg,#10b981,#14b8a6,#06b6d4);">
+      <div class="feature-inner animate-[pulseGlow_4s_ease-in-out_infinite]">
+        <div class="text-5xl mb-4 feature-icon">📊</div>
+        <h3 class="text-lg font-bold text-white mb-2">Real-Time Reports</h3>
+        <p class="text-sm text-gray-300">
+          Live dashboards with actionable insights and analytics.
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature 4 -->
+    <div class="fade-up feature-card"
+         style="background-image: linear-gradient(135deg,#f97316,#ef4444,#dc2626);">
+      <div class="feature-inner animate-[pulseGlow_4s_ease-in-out_infinite]">
+        <div class="text-5xl mb-4 feature-icon">☁️</div>
+        <h3 class="text-lg font-bold text-white mb-2">Cloud Ready</h3>
+        <p class="text-sm text-gray-300">
+          Scalable, reliable, and optimized for cloud deployment.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- DEVELOPMENT PROCESS -->
+<section class="max-w-6xl mx-auto px-6 pb-24">
+  <h2 class="text-3xl font-extrabold text-white text-center mb-14">
+    Our Development Process
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+    <!-- Step 1 -->
+    <div class="fade-up group bg-gradient-to-br from-indigo-600/30 to-indigo-900/30 
+                border border-indigo-400/20 p-8 rounded-2xl 
+                transition transform hover:-translate-y-3 hover:shadow-[0_0_40px_rgba(99,102,241,0.5)]">
+      <div class="text-4xl mb-4">📋</div>
+      <h3 class="text-lg font-bold text-white mb-2">Requirement Analysis</h3>
+      <p class="text-sm text-gray-300">
+        Understanding your goals, users, and workflow in detail.
+      </p>
+      <span class="mt-4 inline-block text-indigo-300 font-semibold">Step 1</span>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="fade-up group bg-gradient-to-br from-pink-600/30 to-purple-900/30 
+                border border-pink-400/20 p-8 rounded-2xl 
+                transition transform hover:-translate-y-3 hover:shadow-[0_0_40px_rgba(236,72,153,0.5)]">
+      <div class="text-4xl mb-4">🎨</div>
+      <h3 class="text-lg font-bold text-white mb-2">UI / UX Design</h3>
+      <p class="text-sm text-gray-300">
+        Crafting intuitive, user-friendly, and engaging designs.
+      </p>
+      <span class="mt-4 inline-block text-pink-300 font-semibold">Step 2</span>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="fade-up group bg-gradient-to-br from-emerald-600/30 to-teal-900/30 
+                border border-emerald-400/20 p-8 rounded-2xl 
+                transition transform hover:-translate-y-3 hover:shadow-[0_0_40px_rgba(16,185,129,0.5)]">
+      <div class="text-4xl mb-4">💻</div>
+      <h3 class="text-lg font-bold text-white mb-2">Development & Testing</h3>
+      <p class="text-sm text-gray-300">
+        Building secure, scalable software with thorough testing.
+      </p>
+      <span class="mt-4 inline-block text-emerald-300 font-semibold">Step 3</span>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="fade-up group bg-gradient-to-br from-orange-600/30 to-red-900/30 
+                border border-orange-400/20 p-8 rounded-2xl 
+                transition transform hover:-translate-y-3 hover:shadow-[0_0_40px_rgba(249,115,22,0.5)]">
+      <div class="text-4xl mb-4">🚀</div>
+      <h3 class="text-lg font-bold text-white mb-2">Deployment & Support</h3>
+      <p class="text-sm text-gray-300">
+        Smooth launch, monitoring, and long-term technical support.
+      </p>
+      <span class="mt-4 inline-block text-orange-300 font-semibold">Step 4</span>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- TECH STACK -->
+<section class="max-w-6xl mx-auto px-6 pb-24 text-center">
+  <h2 class="text-3xl font-extrabold text-white mb-6">
+    Technologies We Use
+  </h2>
+  <p class="text-gray-400 mb-14">
+    Reliable, scalable, and future-ready technologies
+  </p>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 place-items-center">
+
+    <!-- Python -->
+    <div class="tech-card tech-logo delay-1 bg-white/10 p-6 rounded-2xl transition">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+           alt="Python"
+           class="w-14 h-14 mx-auto mb-3">
+      <p class="text-sm text-gray-300">Python</p>
+    </div>
+
+    <!-- Flask -->
+    <div class="tech-card tech-logo delay-2 bg-white/10 p-6 rounded-2xl transition">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+           alt="Flask"
+           class="w-14 h-14 mx-auto mb-3 invert">
+      <p class="text-sm text-gray-300">Flask</p>
+    </div>
+
+    <!-- Django -->
+    <div class="tech-card tech-logo delay-3 bg-white/10 p-6 rounded-2xl transition">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+           alt="Django"
+           class="w-14 h-14 mx-auto mb-3">
+      <p class="text-sm text-gray-300">Django</p>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="tech-card tech-logo delay-4 bg-white/10 p-6 rounded-2xl transition">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+           alt="JavaScript"
+           class="w-14 h-14 mx-auto mb-3">
+      <p class="text-sm text-gray-300">JavaScript</p>
+    </div>
+
+    <!-- React -->
+    <div class="tech-card tech-logo delay-5 bg-white/10 p-6 rounded-2xl transition">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+           alt="React"
+           class="w-14 h-14 mx-auto mb-3">
+      <p class="text-sm text-gray-300">React</p>
+    </div>
+
+    <!-- REST API -->
+    <div class="tech-card tech-logo delay-6 bg-white/10 p-6 rounded-2xl transition">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+           alt="REST API"
+           class="w-14 h-14 mx-auto mb-3">
+      <p class="text-sm text-gray-300">REST APIs</p>
+    </div>
+
+    <!-- PostgreSQL -->
+    <div class="tech-card tech-logo delay-2 bg-white/10 p-6 rounded-2xl transition">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+           alt="PostgreSQL"
+           class="w-14 h-14 mx-auto mb-3">
+      <p class="text-sm text-gray-300">PostgreSQL</p>
+    </div>
+
+    <!-- MySQL -->
+    <div class="tech-card tech-logo delay-4 bg-white/10 p-6 rounded-2xl transition">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+           alt="MySQL"
+           class="w-14 h-14 mx-auto mb-3">
+      <p class="text-sm text-gray-300">MySQL</p>
+    </div>
+
+
+
+
+  </div>
+</section>
+
+<!-- CTA -->
+<!-- CUSTOM SOFTWARE CTA -->
+<section class="relative pb-32 text-center overflow-hidden">
+
+  <!-- Background Glow Effects -->
+  <div class="absolute -top-24 left-1/2 -translate-x-1/2
+              w-[500px] h-[500px] bg-indigo-600/30 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-32 right-1/4
+              w-[400px] h-[400px] bg-blue-600/30 rounded-full blur-3xl"></div>
+
+  <!-- CTA Card -->
+  <div class="relative max-w-3xl mx-auto px-6">
+    <div class="fade-up bg-white/10 backdrop-blur-xl border border-white/10
+                rounded-3xl p-12 shadow-2xl
+                hover:shadow-[0_0_60px_rgba(99,102,241,0.45)]
+                transition">
+
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+        Need <span class="text-indigo-400">Custom Software?</span>
+      </h2>
+
+      <p class="text-gray-300 mb-10 text-lg">
+        Let’s build a <span class="text-emerald-300 font-semibold">secure</span>,
+        <span class="text-pink-300 font-semibold">scalable</span>, and
+        <span class="text-indigo-300 font-semibold">purpose-built</span>
+        solution designed exactly for your needs.
+      </p>
+
+      <!-- CTA Button -->
+      <a href="/#contact"
+         class="inline-flex items-center gap-2 px-10 py-4 rounded-full
+                bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500
+                text-white font-semibold text-lg
+                hover:scale-110 transition
+                shadow-[0_0_30px_rgba(99,102,241,0.7)]">
+        ⚡ Get Free Consultation
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="border-t border-white/10 py-8 text-center text-gray-500 text-sm">
+  © 2026 TechGuardian Infotech. All rights reserved.
+</footer>
+
+<!-- SCROLL ANIMATION -->
+<script>
+  const elements = document.querySelectorAll(".fade-up");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("show");
+    });
+  }, { threshold: 0.15 });
+
+  elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

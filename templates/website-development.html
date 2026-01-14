@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Website Development Services | TechGuardian Infotech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SEO -->
+  <meta name="description"
+        content="Professional website development services by TechGuardian Infotech. Fast, secure, responsive, SEO-optimized websites with payment integration, graphic design and digital services." />
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease;
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .tech-chip {
+      text-align: center;
+      padding: 0.75rem 1rem;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #e5e7eb;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .tech-chip:hover {
+      background: linear-gradient(to right, #6366f1, #3b82f6);
+      color: white;
+      transform: translateY(-4px);
+    }
+
+    .service-card {
+      display: flex;
+      gap: 1rem;
+      padding: 1.25rem;
+      border-radius: 1rem;
+      background: rgba(255, 255, 255, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      background: rgba(99, 102, 241, 0.2);
+    }
+
+    .service-title {
+      color: white;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .service-desc {
+      font-size: 0.875rem;
+      color: #d1d5db;
+      line-height: 1.4;
+    }
+
+    
+/* Gradient border animation */
+@keyframes techGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating effect */
+@keyframes floatTech {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.tech-card {
+  position: relative;
+  padding: 2px;
+  border-radius: 1.5rem;
+  background-size: 300% 300%;
+  animation: techGlow 6s ease infinite;
+}
+
+.tech-inner {
+  border-radius: 1.4rem;
+  background: rgba(15,23,42,0.9);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform .4s ease;
+}
+
+.tech-card:hover .tech-inner {
+  transform: translateY(-8px) scale(1.05);
+}
+
+.tech-icon {
+  animation: floatTech 3s ease-in-out infinite;
+}
+
+@keyframes serviceGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.service-wrap {
+  padding: 2px;
+  border-radius: 1.5rem;
+  background-size: 300% 300%;
+  animation: serviceGlow 6s ease infinite;
+}
+
+.service-inner {
+  background: rgba(15,23,42,0.9);
+  backdrop-filter: blur(14px);
+  border-radius: 1.4rem;
+  padding: 1.75rem;
+  transition: transform .4s ease;
+}
+
+.service-wrap:hover .service-inner {
+  transform: translateY(-10px) scale(1.04);
+}
+
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-indigo-950 to-black text-gray-200">
+
+<!-- FLOATING HOME -->
+<a href="/"
+   class="fixed bottom-6 right-6 z-50
+          bg-gradient-to-r from-indigo-500 to-blue-600
+          text-white px-5 py-3 rounded-full shadow-xl
+          hover:scale-110 transition font-semibold">
+  ← Home
+</a>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600 blur-3xl opacity-20"></div>
+  <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600 blur-3xl opacity-20"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6 py-24 text-center">
+    <span class="inline-block px-4 py-1 mb-5 text-sm font-semibold bg-white/10 text-indigo-300 rounded-full">
+      Website Development
+    </span>
+
+    <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+      High-Performance Websites<br class="hidden md:block">Built for Growth
+    </h1>
+
+    <p class="text-gray-400 max-w-3xl mx-auto">
+      Secure, scalable, mobile-first websites with modern design,
+      payment integration, and digital growth features.
+    </p>
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<nav class="max-w-6xl mx-auto px-6 mb-12 text-sm text-gray-400">
+  <a href="/" class="hover:text-white">Home</a> /
+  <a href="/services" class="hover:text-white">Services</a> /
+  <span class="text-gray-300">Website Development</span>
+</nav>
+
+<!-- OVERVIEW -->
+<!-- WHY YOUR WEBSITE MATTERS -->
+<section class="max-w-6xl mx-auto px-6 pb-28">
+  <div class="fade-up relative rounded-3xl p-[2px]
+              bg-gradient-to-br from-indigo-500/60 via-purple-500/40 to-pink-500/60
+              hover:shadow-[0_0_45px_rgba(99,102,241,0.35)] transition">
+
+    <div class="bg-slate-900/90 backdrop-blur-xl rounded-3xl p-10 sm:p-12
+                transform transition hover:-translate-y-2">
+
+      <!-- Title -->
+      <h2 class="text-3xl font-extrabold text-white mb-6 flex items-center gap-2">
+        🌐 Why Your Website Matters
+      </h2>
+
+      <!-- Content -->
+      <p class="text-gray-300 mb-4 leading-relaxed">
+        Your website is your <span class="text-indigo-300 font-semibold">digital identity</span>.
+        At <strong class="text-white">TechGuardian Infotech</strong>, we design and develop
+        websites that combine modern UI, enterprise-grade security, and
+        performance-driven architecture.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed">
+        From <span class="text-pink-300 font-semibold">startups</span> and
+        <span class="text-emerald-300 font-semibold">schools</span> to
+        <span class="text-orange-300 font-semibold">enterprises</span> —
+        we build websites that don’t just look good, but
+        <span class="text-white font-semibold">convert visitors into customers</span>.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- WHAT WE DELIVER -->
+<section class="max-w-7xl mx-auto px-6 pb-28">
+  <h2 class="text-3xl font-extrabold text-white text-center mb-16">
+    What We Deliver
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+
+    <!-- Fast Performance -->
+    <div class="fade-up group relative rounded-3xl p-[2px]
+                bg-gradient-to-br from-indigo-500 via-blue-500 to-cyan-400
+                hover:shadow-[0_0_50px_rgba(99,102,241,0.6)] transition">
+      <div class="bg-slate-900/90 backdrop-blur-xl rounded-3xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">🚀</div>
+        <h3 class="text-lg font-bold text-white mb-2">Fast Performance</h3>
+        <p class="text-sm text-gray-300">
+          Optimized code and infrastructure for lightning-fast speed.
+        </p>
+      </div>
+    </div>
+
+    <!-- Responsive Design -->
+    <div class="fade-up group relative rounded-3xl p-[2px]
+                bg-gradient-to-br from-pink-500 via-rose-500 to-red-500
+                hover:shadow-[0_0_50px_rgba(236,72,153,0.6)] transition">
+      <div class="bg-slate-900/90 backdrop-blur-xl rounded-3xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">📱</div>
+        <h3 class="text-lg font-bold text-white mb-2">Responsive Design</h3>
+        <p class="text-sm text-gray-300">
+          Seamless experience across mobiles, tablets, and desktops.
+        </p>
+      </div>
+    </div>
+
+    <!-- Secure Architecture -->
+    <div class="fade-up group relative rounded-3xl p-[2px]
+                bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500
+                hover:shadow-[0_0_50px_rgba(16,185,129,0.6)] transition">
+      <div class="bg-slate-900/90 backdrop-blur-xl rounded-3xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">🔒</div>
+        <h3 class="text-lg font-bold text-white mb-2">Secure Architecture</h3>
+        <p class="text-sm text-gray-300">
+          Built with encryption, access control, and best practices.
+        </p>
+      </div>
+    </div>
+
+    <!-- SEO Ready -->
+    <div class="fade-up group relative rounded-3xl p-[2px]
+                bg-gradient-to-br from-orange-500 via-amber-500 to-yellow-400
+                hover:shadow-[0_0_50px_rgba(249,115,22,0.6)] transition">
+      <div class="bg-slate-900/90 backdrop-blur-xl rounded-3xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">📈</div>
+        <h3 class="text-lg font-bold text-white mb-2">SEO Ready</h3>
+        <p class="text-sm text-gray-300">
+          Optimized for search visibility and better rankings.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- OUR DEVELOPMENT PROCESS -->
+<section class="max-w-6xl mx-auto px-6 pb-28">
+  <h2 class="text-3xl font-extrabold text-white text-center mb-16">
+    Our Development Process
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
+
+    <!-- Step 1 -->
+    <div class="fade-up group relative rounded-2xl p-[2px]
+                bg-gradient-to-br from-indigo-500 via-blue-500 to-cyan-400
+                hover:shadow-[0_0_45px_rgba(99,102,241,0.6)] transition">
+      <div class="bg-slate-900/90 backdrop-blur-xl rounded-2xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">🧠</div>
+        <h3 class="text-lg font-bold text-white mb-1">Planning</h3>
+        <p class="text-sm text-gray-300">Understanding goals & strategy</p>
+        <span class="mt-4 inline-block text-indigo-300 font-semibold">
+          Step 1
+        </span>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="fade-up group relative rounded-2xl p-[2px]
+                bg-gradient-to-br from-pink-500 via-rose-500 to-red-500
+                hover:shadow-[0_0_45px_rgba(236,72,153,0.6)] transition">
+      <div class="bg-slate-900/90 backdrop-blur-xl rounded-2xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">🎨</div>
+        <h3 class="text-lg font-bold text-white mb-1">Design</h3>
+        <p class="text-sm text-gray-300">UI/UX & user experience</p>
+        <span class="mt-4 inline-block text-pink-300 font-semibold">
+          Step 2
+        </span>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="fade-up group relative rounded-2xl p-[2px]
+                bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500
+                hover:shadow-[0_0_45px_rgba(16,185,129,0.6)] transition">
+      <div class="bg-slate-900/90 backdrop-blur-xl rounded-2xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">💻</div>
+        <h3 class="text-lg font-bold text-white mb-1">Development</h3>
+        <p class="text-sm text-gray-300">Building secure & scalable code</p>
+        <span class="mt-4 inline-block text-emerald-300 font-semibold">
+          Step 3
+        </span>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="fade-up group relative rounded-2xl p-[2px]
+                bg-gradient-to-br from-orange-500 via-amber-500 to-yellow-400
+                hover:shadow-[0_0_45px_rgba(249,115,22,0.6)] transition">
+      <div class="bg-slate-900/90 backdrop-blur-xl rounded-2xl p-8
+                  transform transition group-hover:-translate-y-3">
+        <div class="text-4xl mb-4">🚀</div>
+        <h3 class="text-lg font-bold text-white mb-1">Launch</h3>
+        <p class="text-sm text-gray-300">Deployment & ongoing support</p>
+        <span class="mt-4 inline-block text-orange-300 font-semibold">
+          Step 4
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- TECHNOLOGY STACK SECTION -->
+<section class="max-w-7xl mx-auto px-6 pb-28">
+  <div class="fade-up tech-card
+              bg-gradient-to-br from-indigo-500 via-purple-50 to-pink-500
+              max-w-5xl mx-auto">
+
+    <div class="tech-inner p-10 sm:p-12 min-h-[420px]">
+      <h3 class="text-2xl font-bold text-white mb-12 flex items-center justify-center gap-2">
+        💻 Technology Stack
+      </h3>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-10">
+
+        <div class="tech-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+               class="w-14 h-14 mx-auto mb-2" alt="HTML5">
+          <p class="text-sm text-gray-300">HTML5</p>
+        </div>
+
+        <div class="tech-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+               class="w-14 h-14 mx-auto mb-2" alt="CSS3">
+          <p class="text-sm text-gray-300">CSS3</p>
+        </div>
+
+        <div class="tech-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+               class="w-14 h-14 mx-auto mb-2" alt="Tailwind CSS">
+          <p class="text-sm text-gray-300">Tailwind CSS</p>
+        </div>
+
+        <div class="tech-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+               class="w-14 h-14 mx-auto mb-2" alt="JavaScript">
+          <p class="text-sm text-gray-300">JavaScript</p>
+        </div>
+
+        <div class="tech-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+               class="w-14 h-14 mx-auto mb-2" alt="React">
+          <p class="text-sm text-gray-300">React</p>
+        </div>
+
+        <div class="tech-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg"
+               class="w-14 h-14 mx-auto mb-2 invert" alt="Flask">
+          <p class="text-sm text-gray-300">Flask</p>
+        </div>
+
+        <div class="tech-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+               class="w-14 h-14 mx-auto mb-2" alt="Python">
+          <p class="text-sm text-gray-300">Python</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- DIGITAL SERVICES SECTION -->
+<section class="max-w-7xl mx-auto px-6 pb-28">
+
+  <div class="fade-up bg-white/10 backdrop-blur-xl p-10 sm:p-12
+              rounded-3xl shadow-2xl max-w-6xl mx-auto">
+
+    <h3 class="text-2xl font-bold text-white mb-12 flex items-center gap-2">
+      🚀 Digital Services
+    </h3>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+
+      <div class="fade-up service-wrap bg-gradient-to-br from-emerald-400 via-teal-500 to-cyan-500">
+        <div class="service-inner">
+          <div class="text-4xl mb-4">💳</div>
+          <h4 class="text-lg font-bold text-white mb-2">Payment Integration</h4>
+          <p class="text-gray-300 text-sm">
+            UPI, cards, payment gateways, auto-reconciliation & automation.
+          </p>
+        </div>
+      </div>
+
+      <div class="fade-up service-wrap bg-gradient-to-br from-pink-500 via-rose-500 to-red-500">
+        <div class="service-inner">
+          <div class="text-4xl mb-4">🎨</div>
+          <h4 class="text-lg font-bold text-white mb-2">Graphic Designing</h4>
+          <p class="text-gray-300 text-sm">
+            Logos, banners, posters, social media & brand identity.
+          </p>
+        </div>
+      </div>
+
+      <div class="fade-up service-wrap bg-gradient-to-br from-indigo-500 via-purple-500 to-fuchsia-500">
+        <div class="service-inner">
+          <div class="text-4xl mb-4">🌐</div>
+          <h4 class="text-lg font-bold text-white mb-2">Digital Services</h4>
+          <p class="text-gray-300 text-sm">
+            Domain, hosting, SSL, backups & maintenance.
+          </p>
+        </div>
+      </div>
+
+      <div class="fade-up service-wrap bg-gradient-to-br from-orange-400 via-amber-500 to-yellow-400">
+        <div class="service-inner">
+          <div class="text-4xl mb-4">📈</div>
+          <h4 class="text-lg font-bold text-white mb-2">SEO & Optimization</h4>
+          <p class="text-gray-300 text-sm">
+            Search ranking, performance & conversions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<!-- FINAL CTA -->
+<section class="relative pb-32 text-center overflow-hidden">
+
+  <!-- Background Glows -->
+  <div class="absolute -top-24 left-1/2 -translate-x-1/2
+              w-[500px] h-[500px] bg-indigo-600/30 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-32 left-1/4
+              w-[400px] h-[400px] bg-pink-600/30 rounded-full blur-3xl"></div>
+
+  <!-- Content Card -->
+  <div class="relative max-w-3xl mx-auto px-6">
+    <div class="fade-up bg-white/10 backdrop-blur-xl border border-white/10
+                rounded-3xl p-12 shadow-2xl
+                hover:shadow-[0_0_60px_rgba(99,102,241,0.45)]
+                transition">
+
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+        Let’s Build Your <span class="text-indigo-400">Website</span>
+      </h2>
+
+      <p class="text-gray-300 mb-10 text-lg">
+        Get a <span class="text-emerald-300 font-semibold">secure</span>,
+        <span class="text-pink-300 font-semibold">scalable</span>, and
+        <span class="text-indigo-300 font-semibold">future-ready</span>
+        digital presence today.
+      </p>
+
+      <!-- CTA Button -->
+      <a href="/#contact"
+         class="inline-flex items-center gap-2 px-10 py-4 rounded-full
+                bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+                text-white font-semibold text-lg
+                hover:scale-110 transition
+                shadow-[0_0_30px_rgba(99,102,241,0.7)]">
+        🚀 Get Free Consultation
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="border-t border-white/10 py-8 text-center text-gray-500 text-sm">
+  © 2026 TechGuardian Infotech. All rights reserved.
+</footer>
+
+<!-- SCROLL ANIMATION -->
+<script>
+  const elements = document.querySelectorAll(".fade-up");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("show");
+    });
+  }, { threshold: 0.15 });
+
+  elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
