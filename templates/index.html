@@ -58,7 +58,7 @@
 
     <!-- Logo -->
     <div class="flex items-center gap-3">
-      <img src="./logo.png" class="w-12 h-12 object-contain" />
+      <img src="../static/images/logo.png" class="w-12 h-12 object-contain" />
       <h1 class="text-xl font-bold text-white">
         TechGuardian <span class="text-blue-400">Infotech</span>
       </h1>
@@ -79,34 +79,47 @@
 
   
 <!-- HERO -->
-<section class="pt-32 pb-24 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white fade-up">
-  <div class="max-w-7xl mx-auto px-6 text-center">
+<section class="relative pt-36 pb-28 bg-[#0b1120] text-white">
 
-    <span class="inline-block mb-4 px-4 py-1 text-sm font-semibold bg-white/10 rounded-full">
-      Modern Digital Solutions
-    </span>
+  <!-- subtle gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-indigo-900/10"></div>
 
-    <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-      Build a Powerful <br class="hidden md:block">
-      Digital Presence with <span class="text-blue-400">TechGuardian Infotech</span>
-    </h2>
+  <div class="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
-    <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-10">
-      We help businesses, professionals, schools, and startups establish a strong online presence
-      through modern websites, custom software, and secure cloud solutions.
-    </p>
+    <!-- LEFT -->
+    <div>
+      <span class="text-blue-400 text-sm font-medium tracking-wide">
+        TechGuardian Infotech
+      </span>
 
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="#contact"
-         class="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition">
-        Get a Free Consultation
-      </a>
+      <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mt-4 mb-6">
+        Building Secure & <br>
+        Scalable Digital Solutions
+      </h2>
 
-      <a href="https://wa.me/919471245230"
-         target="_blank"
-         class="px-8 py-4 bg-green-600 hover:bg-green-700 rounded-lg font-semibold transition">
-        Chat on WhatsApp
-      </a>
+      <p class="text-gray-400 text-lg mb-8 max-w-xl">
+        We craft modern websites, powerful software, and reliable cloud systems
+        designed to grow your business with confidence.
+      </p>
+
+      <div class="flex gap-4">
+        <a href="#contact"
+           class="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+          Get Started
+        </a>
+
+        <a href="https://wa.me/919471245230"
+           class="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="flex justify-center">
+      <img src="./logo.png"
+           class="w-72 opacity-90"
+           alt="logo" />
     </div>
 
   </div>
@@ -932,95 +945,73 @@
 
 
 <!-- ================= FOOTER ================= -->
-<footer class="relative bg-gradient-to-br from-slate-900 via-indigo-950 to-black text-gray-400 overflow-hidden">
+<footer class="bg-[#020617] text-gray-400">
 
-  <!-- Glow -->
-  <div class="absolute -top-32 -left-32 w-96 h-96 bg-indigo-600 rounded-full blur-3xl opacity-10"></div>
-  <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-blue-600 rounded-full blur-3xl opacity-10"></div>
+  <div class="max-w-7xl mx-auto px-6 py-16">
 
-  <div class="relative max-w-7xl mx-auto px-6 pt-20 pb-10">
-
-    <!-- Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <div class="grid md:grid-cols-4 gap-10">
 
       <!-- Brand -->
       <div>
-        <img src="./logo.png" class="w-20 mb-4" />
-        <h3 class="text-xl font-bold text-white mb-3">
-          TechGuardian <span class="text-blue-400">Infotech</span>
+        <img src="../static/images/logo.png" class="w-16 mb-4" />
+        <h3 class="text-white font-semibold text-lg mb-2">
+          TechGuardian Infotech
         </h3>
-        <p class="text-gray-400 text-sm">
-          Guarding your digital presence with secure and scalable solutions.
+        <p class="text-sm text-gray-500">
+          Secure. Scalable. Reliable digital solutions.
         </p>
       </div>
 
       <!-- Services -->
       <div>
-        <h4 class="text-white font-semibold mb-4">Services</h4>
+        <h4 class="text-white font-medium mb-3">Services</h4>
         <ul class="space-y-2 text-sm">
           <li>Website Development</li>
           <li>Custom Software</li>
           <li>Cloud Solutions</li>
-          <li>Digital Services</li>
         </ul>
       </div>
 
       <!-- Links -->
       <div>
-        <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+        <h4 class="text-white font-medium mb-3">Company</h4>
         <ul class="space-y-2 text-sm">
           <li><a href="#contact" class="hover:text-white">Contact</a></li>
           <li><a href="/services" class="hover:text-white">Services</a></li>
-          <li><a href="/privacy" class="hover:text-white">Privacy</a></li>
         </ul>
       </div>
 
       <!-- Contact -->
       <div>
-        <h4 class="text-white font-semibold mb-4">Contact</h4>
-        <p>+91 9471245230</p>
-        <p>support@techguardianinfotech.com</p>
+        <h4 class="text-white font-medium mb-3">Contact</h4>
+        <p class="text-sm">+91 9471245230</p>
+        <p class="text-sm">support@techguardianinfotech.com</p>
       </div>
 
     </div>
 
     <!-- Bottom -->
-    <div class="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="border-t border-white/10 mt-10 pt-6 flex justify-between items-center">
 
       <p class="text-sm text-gray-500">
         © 2026 TechGuardian Infotech
       </p>
 
-      <!-- SOCIAL ICONS (FIXED) -->
+      <!-- Social -->
       <div class="flex gap-4">
 
-        <!-- LinkedIn -->
         <a href="https://www.linkedin.com/company/techguardian-infotech/about/?viewAsMember=true"
-           class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 hover:scale-110 transition">
-
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+           class="w-9 h-9 flex items-center justify-center border border-white/10 rounded-full hover:bg-white/10 transition">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
             <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.7-2.2 4 0 4.8 2.6 4.8 6V24h-4v-7c0-1.7 0-3.8-2.3-3.8s-2.6 1.8-2.6 3.7V24h-4V8z"/>
           </svg>
-
         </a>
 
-        <!-- Facebook -->
         <a href="https://www.facebook.com/profile.php?id=61586945920384"
-           class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 hover:scale-110 transition">
-
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+           class="w-9 h-9 flex items-center justify-center border border-white/10 rounded-full hover:bg-white/10 transition">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
             <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9v-2.9h2.5V9.6c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5v1.8h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12"/>
           </svg>
-
-        </a>
-
-        <!-- WhatsApp -->
-        <a href="https://wa.me/919471245230"
-           class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center hover:scale-110 transition">
-
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-               class="w-5 h-5" />
-
         </a>
 
       </div>
