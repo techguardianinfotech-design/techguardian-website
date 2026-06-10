@@ -42,36 +42,35 @@
 .client-logo {
   min-width: 220px;
   height: 120px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: #ffffff;
-  backdrop-filter: blur(10px);
+  background: transparent;
+  border-radius: 20px;
 
-  border: 1px solid #e5e7eb;
-  border-radius: 24px;
+  padding: 20px;
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.15),
+    0 0 0 1px rgba(255,255,255,0.05);
 
   transition: all .3s ease;
 }
 
-.client-logo:hover {
-  transform: translateY(-6px);
-  border-color: rgba(99,102,241,.5);
-}
 
 .client-logo img {
-  max-height: 70px;
-  max-width: 160px;
+  max-width: 180px;
+  max-height: 90px;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: .8;
-  transition: all .3s ease;
-}
 
-.client-logo:hover img {
-  filter: grayscale(0%);
+  filter: none;
   opacity: 1;
+
+  transition: all .3s ease;
 }
 
 @keyframes marquee {
@@ -659,7 +658,7 @@
           </div>
 
           <div class="client-logo">
-            <img src="static/images/clients/Logo -PNG.png" alt="Doon International School">
+            <img src="static/images/clients/dis.png" alt="Doon International School">
           </div>
 
           <div class="client-logo">
@@ -677,7 +676,7 @@
           </div>
 
           <div class="client-logo">
-            <img src="static/images/clients/Logo -PNG.png" alt="Doon International School">
+            <img src="static/images/clients/dis.png" alt="Doon International School">
           </div>
 
           <div class="client-logo">
