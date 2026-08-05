@@ -47,4 +47,13 @@ def create_app():
 </urlset>'''
         return Response(xml, mimetype='application/xml')
 
+    @app.route('/robots.txt')
+    def robots():
+        content = """User-agent: *
+Allow: /
+
+Sitemap: https://www.techguardianinfotech.com/sitemap.xml
+"""
+        return Response(content, mimetype='text/plain')
+
     return app
