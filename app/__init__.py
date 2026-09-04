@@ -44,6 +44,10 @@ def create_app():
     <loc>https://www.techguardianinfotech.com/digital-security</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.techguardianinfotech.com/mobile-app-development</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>'''
         return Response(xml, mimetype='application/xml')
 
