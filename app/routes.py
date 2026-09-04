@@ -43,6 +43,11 @@ def digital_security():
     return render_template("digital-security.html")
 
 
+@main.route("/mobile-app-development")
+def mobile_app_development():
+    return render_template("mobile-app-development.html")
+
+
 @main.route("/products")
 def products():
     return render_template("products.html")
