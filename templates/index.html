@@ -11,6 +11,354 @@
   
 
   <style>
+
+    <style>
+  .tg-header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    isolation: isolate;
+    background: linear-gradient(
+      110deg,
+      #061a3a 0%,
+      #071c46 48%,
+      #171052 100%
+    );
+    border-bottom: 1px solid rgba(129, 140, 248, 0.25);
+    box-shadow: 0 12px 35px rgba(3, 10, 35, 0.25);
+  }
+
+  .tg-header::before,
+  .tg-header::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 9999px;
+    filter: blur(90px);
+  }
+
+  .tg-header::before {
+    width: 390px;
+    height: 230px;
+    top: -150px;
+    right: -70px;
+    background: rgba(147, 51, 234, 0.55);
+  }
+
+  .tg-header::after {
+    width: 430px;
+    height: 180px;
+    bottom: -145px;
+    left: 28%;
+    background: rgba(2, 132, 199, 0.45);
+  }
+
+  .tg-header-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1280px;
+    min-height: 104px;
+    margin: auto;
+    padding: 13px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  /* BRAND */
+
+  .tg-brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-width: 0;
+    text-decoration: none;
+  }
+
+  .tg-logo {
+    width: 70px;
+    height: 70px;
+    flex: 0 0 auto;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+  }
+
+  .tg-brand-divider {
+    width: 1px;
+    height: 64px;
+    flex: 0 0 auto;
+    background: rgba(255,255,255,0.32);
+  }
+
+  .tg-brand-name {
+    color: white;
+    font-size: clamp(22px, 2.4vw, 31px);
+    font-weight: 850;
+    letter-spacing: -1px;
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+
+  .tg-brand-subtitle {
+    display: inline-block;
+    font-size: clamp(21px, 2.2vw, 28px);
+    font-weight: 850;
+    line-height: 1.15;
+    background: linear-gradient(
+      90deg,
+      #38bdf8,
+      #818cf8,
+      #d946ef
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .tg-tagline {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 5px;
+    color: #cbd5e1;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    white-space: nowrap;
+  }
+
+  .tg-tagline::before,
+  .tg-tagline::after {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: rgba(203,213,225,0.65);
+  }
+
+  /* CONTACT BUTTON */
+
+  .tg-contact {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex: 0 0 auto;
+    padding: 10px 23px 10px 11px;
+    border: 1px solid rgba(147,197,253,0.48);
+    border-radius: 9999px;
+    color: white;
+    text-decoration: none;
+
+    background: linear-gradient(
+      110deg,
+      rgba(14,165,233,0.16),
+      rgba(99,102,241,0.2),
+      rgba(147,51,234,0.2)
+    );
+
+    box-shadow:
+      0 0 22px rgba(59,130,246,0.16),
+      inset 0 0 15px rgba(255,255,255,0.04);
+
+    transition: all 0.3s ease;
+  }
+
+  .tg-contact:hover {
+    transform: translateY(-2px);
+    border-color: rgba(196,181,253,0.9);
+    box-shadow:
+      0 0 30px rgba(99,102,241,0.35),
+      0 8px 25px rgba(0,0,0,0.2);
+  }
+
+  .tg-phone-icon {
+    width: 49px;
+    height: 49px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    color: white;
+    background: linear-gradient(135deg,#22c55e,#059669);
+    box-shadow: 0 0 20px rgba(34,197,94,0.3);
+  }
+
+  .tg-phone-icon svg {
+    width: 23px;
+    height: 23px;
+    stroke-width: 2.4;
+  }
+
+  .tg-contact-divider {
+    width: 1px;
+    height: 42px;
+    background: rgba(255,255,255,0.3);
+  }
+
+  .tg-contact-label {
+    display: block;
+    margin-bottom: 3px;
+    color: #cbd5e1;
+    font-size: 12px;
+  }
+
+  .tg-contact-number {
+    display: block;
+    color: white;
+    font-size: clamp(15px,1.6vw,20px);
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .tg-header-spacer {
+    height: 104px;
+  }
+
+  /* TABLET */
+
+  @media (max-width: 768px) {
+    .tg-header-inner {
+      min-height: 86px;
+      padding: 11px 15px;
+      gap: 10px;
+    }
+
+    .tg-brand {
+      gap: 10px;
+    }
+
+    .tg-logo {
+      width: 55px;
+      height: 55px;
+    }
+
+    .tg-brand-divider {
+      height: 48px;
+    }
+
+    .tg-brand-name {
+      font-size: 20px;
+    }
+
+    .tg-brand-subtitle {
+      font-size: 19px;
+    }
+
+    .tg-tagline {
+      gap: 5px;
+      font-size: 7px;
+      letter-spacing: 1.25px;
+    }
+
+    .tg-tagline::before,
+    .tg-tagline::after {
+      width: 10px;
+    }
+
+    .tg-contact {
+      gap: 9px;
+      padding: 7px 12px 7px 7px;
+    }
+
+    .tg-phone-icon {
+      width: 41px;
+      height: 41px;
+      border-radius: 13px;
+    }
+
+    .tg-contact-number {
+      font-size: 14px;
+    }
+
+    .tg-contact-label {
+      font-size: 10px;
+    }
+
+    .tg-contact-divider {
+      height: 34px;
+    }
+
+    .tg-header-spacer {
+      height: 86px;
+    }
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 480px) {
+    .tg-header-inner {
+      min-height: 74px;
+      padding: 9px 11px;
+    }
+
+    .tg-logo {
+      width: 43px;
+      height: 43px;
+      padding: 3px;
+    }
+
+    .tg-brand {
+      gap: 7px;
+    }
+
+    .tg-brand-divider {
+      height: 38px;
+    }
+
+    .tg-brand-name {
+      font-size: 15px;
+      letter-spacing: -0.4px;
+    }
+
+    .tg-brand-subtitle {
+      font-size: 15px;
+    }
+
+    .tg-tagline {
+      margin-top: 3px;
+      font-size: 5.5px;
+      letter-spacing: 0.65px;
+      gap: 3px;
+    }
+
+    .tg-tagline::before,
+    .tg-tagline::after {
+      width: 6px;
+    }
+
+    .tg-contact {
+      padding: 6px;
+      border-radius: 50%;
+    }
+
+    .tg-phone-icon {
+      width: 39px;
+      height: 39px;
+      border-radius: 50%;
+    }
+
+    .tg-contact-divider,
+    .tg-contact-info {
+      display: none;
+    }
+
+    .tg-header-spacer {
+      height: 74px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tg-contact {
+      transition: none;
+    }
+  }
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -109,68 +457,73 @@
 <body class="bg-gray-50 text-gray-800">
 
   <!-- NAVBAR -->
-<header class="fixed w-full z-50 bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-600 shadow-lg">
-  <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+<header class="tg-header">
 
-    <!-- LEFT: Logo + Company Name -->
-    <div class="flex items-center gap-4">
+  <div class="tg-header-inner">
 
-      <!-- Bigger Logo -->
-      <img 
-        src="../static/images/logo.png" 
+    <!-- BRAND -->
+    <a href="/" class="tg-brand"
+       aria-label="TechGuardian Infotech home">
+
+      <img
+        src="/static/images/logo.png"
         alt="TechGuardian Infotech Logo"
-        class="w-14 h-14 rounded-full bg-white p-1 shadow-md"
-      />
+        class="tg-logo"
+      >
 
-      <!-- Company Name (Stacked) -->
-      <div class="leading-tight">
-        <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-wide">
+      <span class="tg-brand-divider"></span>
+
+      <span class="tg-brand-text">
+
+        <span class="tg-brand-name block">
           TechGuardian
-        </h1>
-        <span class="text-yellow-300 text-lg md:text-xl font-semibold tracking-wide">
+        </span>
+
+        <span class="tg-brand-subtitle">
           Infotech
         </span>
-      </div>
 
-    </div>
+        <span class="tg-tagline">
+          BUILD • DIGITILIZE • GROW
+        </span>
 
-    <!-- RIGHT: Book Now -->
-   <a
-href="tel:+917250894230"
-class="group flex items-center gap-3
-px-6 py-3
-rounded-full
-bg-white/15 backdrop-blur-md
-border border-white/20
-text-white font-semibold
-hover:bg-white/25
-hover:scale-105
-transition-all duration-300
-shadow-lg"
+      </span>
 
->
+    </a>
 
-  <div class="w-10 h-10 rounded-full
-              bg-green-500
-              flex items-center justify-center
-              shadow-md">
-    📞
-  </div>
+    <!-- CONTACT -->
+    <a
+      href="tel:+917250894230"
+      class="tg-contact"
+      aria-label="Call TechGuardian Infotech"
+    >
 
-  <div class="hidden md:block text-left leading-tight">
-    <span class="block text-xs text-gray-200">
-      Call Us Now
-    </span>
-    <span class="font-bold text-white">
-      +91 72508 94230
-    </span>
-  </div>
+      <span class="tg-phone-icon">
+        <i data-lucide="phone-call"></i>
+      </span>
 
-</a>
+      <span class="tg-contact-divider"></span>
 
+      <span class="tg-contact-info">
+
+        <span class="tg-contact-label">
+          Call Us Now
+        </span>
+
+        <span class="tg-contact-number">
+          +91 72508 94230
+        </span>
+
+      </span>
+
+    </a>
 
   </div>
+
 </header>
+
+<!-- HEADER SPACING -->
+<div class="tg-header-spacer"></div>
 
 <!-- Spacer to avoid content hiding under fixed header -->
 <div class="h-20"></div>
